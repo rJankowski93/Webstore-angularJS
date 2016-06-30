@@ -6,7 +6,7 @@
 		</div>
 
 		<div class="col-sm-6">
-			<a class="btn btn-primary pull-right" href="#/userCreate/"> Add user</a>
+			<a class="btn btn-primary pull-right" href="#/admin/userCreate/"> Add user</a>
 		</div>
 
 	</div>
@@ -31,7 +31,7 @@
 					<td>{{user.name}}</td>
 					<td>{{user.email}}</td>
 					<td>{{user.role}}</td>
-					<td><a href="#/userEdit/{{$index}}" class="btn btn-default btn-sm">Edit</a></td>
+					<td><a href="#/admin/userEdit/{{$index}}" class="btn btn-default btn-sm">Edit</a></td>
 					<td><button class="btn btn-danger btn-sm" ng-click="removeUser(user, $index)">Remove</button></td>
 				</tr>
 			</tbody>

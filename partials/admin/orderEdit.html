@@ -1,0 +1,36 @@
+<form ng-submit="saveChanges( order )">
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-sm-4 center-block">
+
+                <div class="form-group">
+                    <label>User id</label>
+                    <input type="text" class="form-control" ng-model="order.userId">
+                </div>
+
+                <div class="form-group">
+                    <label>Name:</label>
+                    <input type="text" class="form-control" ng-model="order.name">
+                </div>
+
+                <div class="form-group">
+                    <label>Email</label>
+                    <input type="password" class="form-control" ng-model="order.email">
+                </div>
+
+                //TODO edycja items
+
+
+                <hr>
+                <button type="submit" class="btn btn-primary">Save changes</button>
+                <a href="#/admin/orders" class="btn btn-default">Return</a>
+                <p>&nbsp;</p>
+
+            </div>
+
+        </div>
+    </div>
+
+</form>

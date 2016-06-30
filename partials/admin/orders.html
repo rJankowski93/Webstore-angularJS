@@ -6,7 +6,7 @@
 		</div>
 
 		<div class="col-sm-6">
-			<a class="btn btn-primary pull-right" href="#/orderCreate/"> Add order</a>
+			<a class="btn btn-primary pull-right" href="#/admin/orderCreate/"> Add order</a>
 		</div>
 
 	</div>
@@ -55,7 +55,7 @@
 					<button ng-if="order.status == 1" class="btn btn-warning" ng-click="changeStatus(order, $index)">Expect</button>
 					<button ng-if="order.status == 0" class="btn btn-success"ng-click="changeStatus(order, $index)">Done</button>
 					</td>
-					<td><a href="#/orderEdit/{{$index}}" class="btn btn-default btn-sm">Edit</a></td>
+					<td><a href="#/admin/orderEdit/{{$index}}" class="btn btn-default btn-sm">Edit</a></td>
 					<td><button class="btn btn-danger btn-sm" ng-click="removeOrder(order, $index)">Remove</button></td>
 				</tr>
 			</tbody>

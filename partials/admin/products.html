@@ -4,7 +4,7 @@
 			<input type="text" class="form-control" placeholder="search..." ng-model="search"></input>
 		</div>
 		<div class="col-sm-6">
-			<a class="btn btn-primary pull-right" href="#/productCreate/"> New product</a>
+			<a class="btn btn-primary pull-right" href="#/admin/productCreate/"> New product</a>
 		</div>
 	</div>
 	<br>
@@ -16,7 +16,7 @@
 			<br> Description: {{product.description}}
 			<br>
 			<p>&nbsp</p>
-			<a href="#/productEdit/{{$index}}" class="btn btn-default">Edit</a>
+			<a href="#/admin/productEdit/{{$index}}" class="btn btn-default">Edit</a>
 			<button class="btn btn-danger" ng-click="removeProduct(product, $index)"> Remove </button>
 		</div>
 	</div>

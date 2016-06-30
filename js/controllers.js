@@ -8,7 +8,7 @@
 
 	// ********************* PRODUCTS *******************************//
 
-	variables.MyControllers.controller('products', [ '$scope', '$filter', '$http', function($scope, $filter, $http) {
+	variables.MyControllers.controller('productsAdmin', [ '$scope', '$filter', '$http', function($scope, $filter, $http) {
 
 		$http.get("model/products.json").success(function(data) {
 			$scope.products = data;
@@ -23,7 +23,7 @@
 
 	} ]);
 
-	variables.MyControllers.controller('productEdit', [ '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+	variables.MyControllers.controller('productEditAdmin', [ '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
 		$http.get("model/products.json").success(function(data) {
 			var products = data;
 			$scope.product = products[$routeParams.id];
@@ -36,7 +36,7 @@
 		}
 	} ]);
 
-	variables.MyControllers.controller('productCreate', [ '$scope', '$http', function($scope, $http) {
+	variables.MyControllers.controller('productCreateAdmin', [ '$scope', '$http', function($scope, $http) {
 		$scope.product;
 		$scope.createProduct = function(product) {
 			// TODO tutaj bedziemy zapisywac zmeiny do bazy
@@ -54,7 +54,7 @@
 
 	// ********************* USERS *******************************//
 
-	variables.MyControllers.controller('users', [ '$scope', '$http', function($scope, $http) {
+	variables.MyControllers.controller('usersAdmin', [ '$scope', '$http', function($scope, $http) {
 		$http.get("model/users.json").success(function(data) {
 			$scope.users = data;
 		}).error(function() {
@@ -67,7 +67,7 @@
 		}
 	} ]);
 
-	variables.MyControllers.controller('userCreate', [ '$scope', '$http', function($scope, $http) {
+	variables.MyControllers.controller('userCreateAdmin', [ '$scope', '$http', function($scope, $http) {
 		$scope.user;
 		/*
 		 * $scope.createUser = function(user) { // TODO tutaj bedziemy zapisywac
@@ -75,7 +75,7 @@
 		 */
 	} ]);
 
-	variables.MyControllers.controller('userEdit', [ '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+	variables.MyControllers.controller('userEditAdmin', [ '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
 		$http.get("model/users.json").success(function(data) {
 			var users = data;
 			$scope.user = users[$routeParams.id];
@@ -90,7 +90,7 @@
 	
 	// ********************* ORDERS *******************************//
 	
-	variables.MyControllers.controller('orders', [ '$scope', '$http', function($scope, $http) {
+	variables.MyControllers.controller('ordersAdmin', [ '$scope', '$http', function($scope, $http) {
 		$http.get("model/orders.json").success(function(data) {
 			$scope.orders = data;
 			console.log($scope.orders[0].items[0].name)
@@ -114,7 +114,7 @@
 		}
 	} ]);
 	
-	variables.MyControllers.controller('orderEdit', [ '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
+	variables.MyControllers.controller('orderEditAdmin', [ '$scope', '$http', '$routeParams', function($scope, $http, $routeParams) {
 		$http.get("model/orders.json").success(function(data) {
 			var orders = data;
 			$scope.order = orders[$routeParams.id];
