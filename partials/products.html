@@ -1,0 +1,23 @@
+<div class="container" >
+	<div class="row">
+		<div class="col-sm-6">
+			<input type="text" class="form-control" placeholder="search..." ng-model="search"></input>
+		</div>
+		<div class="col-sm-6">
+			<a class="btn btn-primary pull-right" href="#/productCreate/"> New product</a>
+		</div>
+	</div>
+	<br>
+	<div>
+		<!-- <button class="btn-primary" ng-click="showProducts()"> Show products </button> -->
+
+		<div class="alert alert-info" ng-repeat="product in products | filter : search">
+			Name: {{product.name}} <br> Price: {{product.price | number:2 }} $ <br> Manufacturer: {{product.manufacturer}}
+			<br> Description: {{product.description}}
+			<br>
+			<p>&nbsp</p>
+			<a href="#/productEdit/{{$index}}" class="btn btn-default">Edit</a>
+			<button class="btn btn-danger" ng-click="removeProduct(product, $index)"> Remove </button>
+		</div>
+	</div>
+</div>

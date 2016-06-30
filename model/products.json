@@ -1,0 +1,345 @@
+[
+	{
+		"id": 1,
+		"name": "Ventolin HFA",
+		"manufacturer": "Yahoo",
+		"price": "1.42",
+		"description": "mi felis, adipiscing fringilla, porttitor vulputate, posuere vulputate, lacus. Cras"
+	},
+	{
+		"id": 2,
+		"name": "Diazepam",
+		"manufacturer": "Finale",
+		"price": "1.90",
+		"description": "fermentum arcu. Vestibulum ante ipsum primis in faucibus orci luctus"
+	},
+	{
+		"id": 3,
+		"name": "Cyclobenzaprin HCl",
+		"manufacturer": "Apple Systems",
+		"price": "7.63",
+		"description": "Curabitur sed tortor. Integer aliquam adipiscing lacus. Ut nec urna"
+	},
+	{
+		"id": 4,
+		"name": "Omeprazole (Rx)",
+		"manufacturer": "Google",
+		"price": "6.57",
+		"description": "penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec"
+	},
+	{
+		"id": 5,
+		"name": "Losartan Potassium",
+		"manufacturer": "Altavista",
+		"price": "9.81",
+		"description": "risus. Donec nibh enim, gravida sit amet, dapibus id, blandit"
+	},
+	{
+		"id": 6,
+		"name": "Zyprexa",
+		"manufacturer": "Lycos",
+		"price": "0.82",
+		"description": "blandit viverra. Donec tempus, lorem fringilla ornare placerat, orci lacus"
+	},
+	{
+		"id": 7,
+		"name": "Nexium",
+		"manufacturer": "Apple Systems",
+		"price": "5.66",
+		"description": "eu arcu. Morbi sit amet massa. Quisque porttitor eros nec"
+	},
+	{
+		"id": 8,
+		"name": "Benicar",
+		"manufacturer": "Sibelius",
+		"price": "8.94",
+		"description": "amet ornare lectus justo eu arcu. Morbi sit amet massa."
+	},
+	{
+		"id": 9,
+		"name": "Benicar HCT",
+		"manufacturer": "Apple Systems",
+		"price": "6.51",
+		"description": "ac facilisis facilisis, magna tellus faucibus leo, in lobortis tellus"
+	},
+	{
+		"id": 10,
+		"name": "Tri-Sprintec",
+		"manufacturer": "Yahoo",
+		"price": "6.25",
+		"description": "at risus. Nunc ac sem ut dolor dapibus gravida. Aliquam"
+	},
+	{
+		"id": 11,
+		"name": "Amitriptyline HCl",
+		"manufacturer": "Microsoft",
+		"price": "5.69",
+		"description": "in aliquet lobortis, nisi nibh lacinia orci, consectetuer euismod est"
+	},
+	{
+		"id": 12,
+		"name": "Albuterol",
+		"manufacturer": "Microsoft",
+		"price": "5.40",
+		"description": "iaculis enim, sit amet ornare lectus justo eu arcu. Morbi"
+	},
+	{
+		"id": 13,
+		"name": "TriNessa",
+		"manufacturer": "Yahoo",
+		"price": "2.19",
+		"description": "vulputate ullamcorper magna. Sed eu eros. Nam consequat dolor vitae"
+	},
+	{
+		"id": 14,
+		"name": "Risperidone",
+		"manufacturer": "Adobe",
+		"price": "5.85",
+		"description": "ultricies dignissim lacus. Aliquam rutrum lorem ac risus. Morbi metus."
+	},
+	{
+		"id": 15,
+		"name": "Prednisone",
+		"manufacturer": "Apple Systems",
+		"price": "5.25",
+		"description": "molestie sodales. Mauris blandit enim consequat purus. Maecenas libero est,"
+	},
+	{
+		"id": 16,
+		"name": "Amphetamine Salts",
+		"manufacturer": "Macromedia",
+		"price": "5.35",
+		"description": "dictum cursus. Nunc mauris elit, dictum eu, eleifend nec, malesuada"
+	},
+	{
+		"id": 17,
+		"name": "Diovan HCT",
+		"manufacturer": "Finale",
+		"price": "1.06",
+		"description": "dolor dolor, tempus non, lacinia at, iaculis quis, pede. Praesent"
+	},
+	{
+		"id": 18,
+		"name": "Januvia",
+		"manufacturer": "Sibelius",
+		"price": "3.82",
+		"description": "ullamcorper viverra. Maecenas iaculis aliquet diam. Sed diam lorem, auctor"
+	},
+	{
+		"id": 19,
+		"name": "Ciprofloxacin HCl",
+		"manufacturer": "Lycos",
+		"price": "4.16",
+		"description": "malesuada. Integer id magna et ipsum cursus vestibulum. Mauris magna."
+	},
+	{
+		"id": 20,
+		"name": "Citalopram HBr",
+		"manufacturer": "Microsoft",
+		"price": "6.70",
+		"description": "Ut semper pretium neque. Morbi quis urna. Nunc quis arcu"
+	},
+	{
+		"id": 21,
+		"name": "Promethazine HCl",
+		"manufacturer": "Sibelius",
+		"price": "5.68",
+		"description": "malesuada fringilla est. Mauris eu turpis. Nulla aliquet. Proin velit."
+	},
+	{
+		"id": 22,
+		"name": "Amphetamine Salts",
+		"manufacturer": "Lavasoft",
+		"price": "1.83",
+		"description": "malesuada fames ac turpis egestas. Aliquam fringilla cursus purus. Nullam"
+	},
+	{
+		"id": 23,
+		"name": "Lorazepam",
+		"manufacturer": "Borland",
+		"price": "0.12",
+		"description": "Duis risus odio, auctor vitae, aliquet nec, imperdiet nec, leo."
+	},
+	{
+		"id": 24,
+		"name": "Oxycontin",
+		"manufacturer": "Borland",
+		"price": "3.87",
+		"description": "Nunc commodo auctor velit. Aliquam nisl. Nulla eu neque pellentesque"
+	},
+	{
+		"id": 25,
+		"name": "Paroxetine HCl",
+		"manufacturer": "Adobe",
+		"price": "4.66",
+		"description": "aptent taciti sociosqu ad litora torquent per conubia nostra, per"
+	},
+	{
+		"id": 26,
+		"name": "Lantus Solostar",
+		"manufacturer": "Lavasoft",
+		"price": "8.95",
+		"description": "mi eleifend egestas. Sed pharetra, felis eget varius ultrices, mauris"
+	},
+	{
+		"id": 27,
+		"name": "Potassium Chloride",
+		"manufacturer": "Microsoft",
+		"price": "6.13",
+		"description": "taciti sociosqu ad litora torquent per conubia nostra, per inceptos"
+	},
+	{
+		"id": 28,
+		"name": "Prednisone",
+		"manufacturer": "Microsoft",
+		"price": "7.32",
+		"description": "augue. Sed molestie. Sed id risus quis diam luctus lobortis."
+	},
+	{
+		"id": 29,
+		"name": "Atenolol",
+		"manufacturer": "Chami",
+		"price": "3.86",
+		"description": "scelerisque scelerisque dui. Suspendisse ac metus vitae velit egestas lacinia."
+	},
+	{
+		"id": 30,
+		"name": "Fluoxetine HCl",
+		"manufacturer": "Altavista",
+		"price": "4.20",
+		"description": "Nullam ut nisi a odio semper cursus. Integer mollis. Integer"
+	},
+	{
+		"id": 31,
+		"name": "Crestor",
+		"manufacturer": "Microsoft",
+		"price": "9.81",
+		"description": "Vestibulum accumsan neque et nunc. Quisque ornare tortor at risus."
+	},
+	{
+		"id": 32,
+		"name": "Glyburide",
+		"manufacturer": "Finale",
+		"price": "9.55",
+		"description": "Nulla semper tellus id nunc interdum feugiat. Sed nec metus"
+	},
+	{
+		"id": 33,
+		"name": "Sertraline HCl",
+		"manufacturer": "Finale",
+		"price": "8.77",
+		"description": "sem elit, pharetra ut, pharetra sed, hendrerit a, arcu. Sed"
+	},
+	{
+		"id": 34,
+		"name": "Nuvaring",
+		"manufacturer": "Lycos",
+		"price": "6.21",
+		"description": "adipiscing lobortis risus. In mi pede, nonummy ut, molestie in,"
+	},
+	{
+		"id": 35,
+		"name": "Tricor",
+		"manufacturer": "Lavasoft",
+		"price": "5.51",
+		"description": "nec luctus felis purus ac tellus. Suspendisse sed dolor. Fusce"
+	},
+	{
+		"id": 36,
+		"name": "Benicar",
+		"manufacturer": "Chami",
+		"price": "2.95",
+		"description": "Sed neque. Sed eget lacus. Mauris non dui nec urna"
+	},
+	{
+		"id": 37,
+		"name": "Ciprofloxacin HCl",
+		"manufacturer": "Microsoft",
+		"price": "0.37",
+		"description": "ipsum. Curabitur consequat, lectus sit amet luctus vulputate, nisi sem"
+	},
+	{
+		"id": 38,
+		"name": "Lisinopril/Hydrochlorothiazide",
+		"manufacturer": "Apple Systems",
+		"price": "1.18",
+		"description": "velit eget laoreet posuere, enim nisl elementum purus, accumsan interdum"
+	},
+	{
+		"id": 39,
+		"name": "Benicar HCT",
+		"manufacturer": "Apple Systems",
+		"price": "9.66",
+		"description": "ac facilisis facilisis, magna tellus faucibus leo, in lobortis tellus"
+	},
+	{
+		"id": 40,
+		"name": "Metoprolol Succinate",
+		"manufacturer": "Finale",
+		"price": "8.54",
+		"description": "et, commodo at, libero. Morbi accumsan laoreet ipsum. Curabitur consequat,"
+	},
+	{
+		"id": 41,
+		"name": "Metformin HCl",
+		"manufacturer": "Microsoft",
+		"price": "7.75",
+		"description": "faucibus lectus, a sollicitudin orci sem eget massa. Suspendisse eleifend."
+	},
+	{
+		"id": 42,
+		"name": "Alendronate Sodium",
+		"manufacturer": "Altavista",
+		"price": "8.82",
+		"description": "accumsan sed, facilisis vitae, orci. Phasellus dapibus quam quis diam."
+	},
+	{
+		"id": 43,
+		"name": "Atenolol",
+		"manufacturer": "Yahoo",
+		"price": "3.42",
+		"description": "Nulla facilisi. Sed neque. Sed eget lacus. Mauris non dui"
+	},
+	{
+		"id": 44,
+		"name": "Proair HFA",
+		"manufacturer": "Chami",
+		"price": "4.32",
+		"description": "In mi pede, nonummy ut, molestie in, tempus eu, ligula."
+	},
+	{
+		"id": 45,
+		"name": "Lorazepam",
+		"manufacturer": "Microsoft",
+		"price": "6.02",
+		"description": "per inceptos hymenaeos. Mauris ut quam vel sapien imperdiet ornare."
+	},
+	{
+		"id": 46,
+		"name": "Azithromycin",
+		"manufacturer": "Chami",
+		"price": "8.48",
+		"description": "Nullam feugiat placerat velit. Quisque varius. Nam porttitor scelerisque neque."
+	},
+	{
+		"id": 47,
+		"name": "Diazepam",
+		"manufacturer": "Microsoft",
+		"price": "9.84",
+		"description": "Praesent eu nulla at sem molestie sodales. Mauris blandit enim"
+	},
+	{
+		"id": 48,
+		"name": "Citalopram HBr",
+		"manufacturer": "Lycos",
+		"price": "3.71",
+		"description": "tincidunt pede ac urna. Ut tincidunt vehicula risus. Nulla eget"
+	},
+	{
+		"id": 49,
+		"name": "Simvastatin",
+		"manufacturer": "Lavasoft",
+		"price": "5.80",
+		"description": "auctor ullamcorper, nisl arcu iaculis enim, sit amet ornare lectus"
+	}
+]

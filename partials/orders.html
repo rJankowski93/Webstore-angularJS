@@ -1,0 +1,65 @@
+<div class="container">
+	<div class="row">
+
+		<div class="col-sm-6">
+			<input type="text" class="form-control" placeholder="search..." ng-model="search"></input>
+		</div>
+
+		<div class="col-sm-6">
+			<a class="btn btn-primary pull-right" href="#/orderCreate/"> Add order</a>
+		</div>
+
+	</div>
+
+	<br>
+
+	<div class="row">
+		<table class="table ">
+			<thead>
+				<tr>
+					<th>Id</th>
+					<th>Name</th>
+					<th>Email</th>
+					<th>Items</th>
+					<th>Total</th>
+					<th>Status</th>
+					<th></th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng-repeat="order in orders | filter : search">
+					<td>{{$index+1}}</td>
+					<td>{{order.name}}</td>
+					<td>{{order.email}}</td>
+					<td>
+					<table class="table">
+						<thead>
+							<tr>
+								<th>Name</th>
+								<th>Price</th>
+								<th>Quantity</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr ng-repeat="item in items">
+								<td>{{item.name}}</td>
+								<td>{{item.price}}</td>
+								<td>{{item.qty}}</td>
+							</tr>
+						</tbody>					
+					</table>
+					</td>
+					<td>{{order.total}}</td>
+					<td>
+					<button ng-if="order.status == 1" class="btn btn-warning" ng-click="changeStatus(order, $index)">Expect</button>
+					<button ng-if="order.status == 0" class="btn btn-success"ng-click="changeStatus(order, $index)">Done</button>
+					</td>
+					<td><a href="#/orderEdit/{{$index}}" class="btn btn-default btn-sm">Edit</a></td>
+					<td><button class="btn btn-danger btn-sm" ng-click="removeOrder(order, $index)">Remove</button></td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+
+</div>
