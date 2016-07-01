@@ -3,8 +3,7 @@
 		"userId":1,
 		"name":"Adrian",
 		"email":"foo@bar.com",
-		"items":
-		[
+		"items":[
 			{
 				"name":"Flovent HFA",
 				"desc":"eros. Proin ultrices. Duis volutpat nunc sit amet metus. Aliquam erat volutpat. Nulla facilisis. Suspendisse commodo tincidunt",
@@ -27,17 +26,16 @@
 		"userId":1,
 		"name":"Emil",
 		"email":"foo@bar.com",
-		"items":
-		[
+		"items":[
 			{
-			"name":"Digoxin",
-			"desc":"magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit, est ac facilisis facilisis, magna tellus faucibus leo, in lobortis tellus justo sit",
-			"price":1.70,
-			"weigth":1.94,
-			"qty":5
+				"name":"Digoxin",
+				"desc":"magna. Praesent interdum ligula eu enim. Etiam imperdiet dictum magna. Ut tincidunt orci quis lectus. Nullam suscipit, est ac facilisis facilisis, magna tellus faucibus leo, in lobortis tellus justo sit",
+				"price":1.70,
+				"weigth":1.94,
+				"qty":5
 			}
 		],
 		"total":19.45,
 		"status":1
-	}		
+	}
 ]
