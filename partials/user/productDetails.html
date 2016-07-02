@@ -1,0 +1,18 @@
+<form ng-submit="saveChanges( product )">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">
+                <h2>{{product.name}}</h2>
+                <h3>{{product.manufacturer}}</h3>
+                <h4>{{product.description}}</h4>
+                <h2>
+                    <span class="label label-warning"> {{product.price | number:2}} zl</span>
+                </h2>
+
+                <a href="#/productsList"> <button type="submit" class="btn btn-default"> Return  </button> </a>
+
+            </div>
+        </div>
+    </div>
+
+</form>

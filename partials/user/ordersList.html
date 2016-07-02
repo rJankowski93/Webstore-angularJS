@@ -1,0 +1,49 @@
+<div class="container">
+    <div class="row">
+
+        <div class="col-sm-6">
+            <input type="text" class="form-control" placeholder="search..." ng-model="search"></input>
+        </div>
+    </div>
+
+    <br></br>
+
+    <div class="row">
+        <table class="table ">
+            <thead>
+            <tr>
+                <th>Id</th>
+                <th>Items</th>
+                <th>Total</th>
+                <th></th>
+                <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr ng-repeat="order in orders | filter : search">
+                <td> <a href="#/orderDetails/:id"> {{$index+1}} </a> </td>
+                <td>
+                    <table class="table">
+                        <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Price</th>
+                            <th>Quantity</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr ng-repeat="item in order.items">
+                            <td>{{item.name}}</td>
+                            <td>{{item.price}}</td>
+                            <td>{{item.qty}}</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+                <td>{{order.total}}</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</div>

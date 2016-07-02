@@ -4,11 +4,11 @@
         MyControllers: {}
     };
 
-    variables.MyControllers = angular.module('controllers', ['ngRoute']);
+    variables.MyControllers = angular.module('controllersAdmin', ['ngRoute']);
 
     // ********************* PRODUCTS *******************************//
 
-    variables.MyControllers.controller('productsAdmin', ['$scope', '$filter', '$http', function ($scope, $filter, $http) {
+    variables.MyControllers.controller('productsListAdmin', ['$scope', '$filter', '$http', function ($scope, $filter, $http) {
 
         $http.get("model/products.json").success(function (data) {
             $scope.products = data;
@@ -61,7 +61,7 @@
 
     // ********************* USERS *******************************//
 
-    variables.MyControllers.controller('usersAdmin', ['$scope', '$http', function ($scope, $http) {
+    variables.MyControllers.controller('usersListAdmin', ['$scope', '$http', function ($scope, $http) {
         $http.get("model/users.json").success(function (data) {
             $scope.users = data;
         }).error(function () {
@@ -97,7 +97,7 @@
 
     // ********************* ORDERS *******************************//
 
-    variables.MyControllers.controller('ordersAdmin', ['$scope', '$http', function ($scope, $http) {
+    variables.MyControllers.controller('ordersListAdmin', ['$scope', '$http', function ($scope, $http) {
         $http.get("model/orders.json").success(function (data) {
             $scope.orders = data;
         }).error(function () {
@@ -133,5 +133,8 @@
         }
     }]);
 
+    variables.MyControllers.controller('orderCreateAdmin', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+
+    }]);
 
 }());

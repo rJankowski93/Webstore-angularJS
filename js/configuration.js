@@ -5,17 +5,15 @@
 			ngShop : {}
 		};
 
-	var app = angular.module( 'app' , [ 'ngRoute' , 'controllers' ] );
-	
-	variables.ngShop = angular.module('ngShop' , [ 'ngRoute' , 'controllers' ]);
+	variables.ngShop = angular.module('ngShop' , [ 'ngRoute' , 'controllersAdmin' , 'controllersUser' ]);
 
 	variables.ngShop.config([ '$routeProvider'  , function( $routeProvider ) {
 		
 		// ********************* PRODUCTS *******************************//
 		
-		$routeProvider.when("/admin/products", {
-			controller: "productsAdmin",
-			templateUrl: "partials/admin/products.html"
+		$routeProvider.when("/admin/productsList", {
+			controller: "productsListAdmin",
+			templateUrl: "partials/admin/productsList.html"
 		})
 		
 		$routeProvider.when("/admin/productEdit/:id", {
@@ -28,21 +26,21 @@
 			templateUrl: "partials/admin/productCreate.html"
 		})
 
-		$routeProvider.when("/products", {
-			controller: "products",
-			templateUrl: "partials/user/products.html"
+		$routeProvider.when("/productsList", {
+			controller: "productsListUser",
+			templateUrl: "partials/user/productsList.html"
 		})
 
-		$routeProvider.when("/product", {
-			controller: "product",
-			templateUrl: "partials/user/product.html"
+		$routeProvider.when("/productDetails/:id", {
+			controller: "productDetailsUser",
+			templateUrl: "partials/user/productDetails.html"
 		})
 		
 		// ********************* USERS *******************************//
 		
-		$routeProvider.when("/admin/users", {
-			controller: "usersAdmin",
-			templateUrl: "partials/admin/users.html"
+		$routeProvider.when("/admin/usersList", {
+			controller: "usersListAdmin",
+			templateUrl: "partials/admin/usersList.html"
 		})
 		
 		$routeProvider.when("/admin/userEdit/:id", {
@@ -57,9 +55,9 @@
 
 		// ********************* ORDERS *******************************//
 		
-		$routeProvider.when("/admin/orders", {
-			controller: "ordersAdmin",
-			templateUrl: "partials/admin/orders.html"
+		$routeProvider.when("/admin/ordersList", {
+			controller: "ordersListAdmin",
+			templateUrl: "partials/admin/ordersList.html"
 		})
 		
 		$routeProvider.when("/admin/orderEdit/:id", {
@@ -72,14 +70,14 @@
 			templateUrl: "partials/admin/orderCreate.html"
 		})
 
-		$routeProvider.when("/orders", {
-			controller: "orders",
-			templateUrl: "partials/user/orders.html"
+		$routeProvider.when("/ordersList", {
+			controller: "ordersListUser",
+			templateUrl: "partials/user/ordersList.html"
 		})
 
-		$routeProvider.when("/order", {
-			controller: "order",
-			templateUrl: "partials/user/order.html"
+		$routeProvider.when("/orderDetails", {
+			controller: "orderDetailsUser",
+			templateUrl: "partials/user/orderDetails.html"
 		})
 		
 		// ****************************************************//
