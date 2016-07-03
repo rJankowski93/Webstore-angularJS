@@ -7,8 +7,20 @@
     variables.MyControllers = angular.module('controllersUser', ['ngRoute']);
 
     // ********************* PRODUCTS *******************************//
-    variables.MyControllers.controller('productsListUser', ['$scope', '$filter', '$http', function ($scope, $filter, $http) {
-        console.log("A");
+    variables.MyControllers.controller('productsListUser', ['$scope', '$filter', '$http' , 'store', 'cart' , function ($scope, $filter, $http, store, cart) {
+
+        var myObj = {
+            name: 'mgonto'
+        };
+
+        store.set('obj', myObj);
+
+        cart.show();
+
+
+
+
+
         $http.get("model/products.json").success(function (data) {
             $scope.products = data;
         }).error(function () {
@@ -16,7 +28,8 @@
         })
     }]);
 
-    variables.MyControllers.controller('productDetailsUser', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+    variables.MyControllers.controller('productDetailsUser', ['$scope', '$http', '$routeParams', 'store', function ($scope, $http, $routeParams, store) {
+        console.log(store.get('obj'));
         $http.get("model/products.json").success(function (data) {
             var products = data;
             $scope.product = products[$routeParams.id];

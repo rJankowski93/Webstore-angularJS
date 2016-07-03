@@ -5,7 +5,7 @@
 			ngShop : {}
 		};
 
-	variables.ngShop = angular.module('ngShop' , [ 'ngRoute' , 'controllersAdmin' , 'controllersUser' ]);
+	variables.ngShop = angular.module('ngShop' , [ 'ngRoute' , 'controllersAdmin' , 'controllersUser', 'controllersNavigation' , 'angular-storage', 'servicesFactory' ]);
 
 	variables.ngShop.config([ '$routeProvider'  , function( $routeProvider ) {
 		

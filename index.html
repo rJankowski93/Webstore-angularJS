@@ -9,18 +9,22 @@
     <link href="css/bootstrap.css" rel="stylesheet">
 </head>
 <body ng-app="ngShop">
-
+{{2+2}}
 <div ng-controller="navigation" ng-include="navigation()"></div>
 
 <div ng-view></div>
 
-<script src="angular/angular.js"></script>
-<script src="angular/angular-route.js"></script>
+<script src="js/externalLibrary/jquery-2.2.3.min.js"></script>
+<script src="js/externalLibrary/bootstrap.js"></script>
+<script src="js/externalLibrary/angular.js"></script>
+<script src="js/externalLibrary/angular-route.js"></script>
+<script src="js/externalLibrary/angular-storage.min.js"></script>
+
+
 <script src="js/configuration.js"></script>
 <script src="js/controllersAdmin.js"></script>
 <script src="js/controllersUser.js"></script>
-
-<script src="js/externalLibrary/jquery-2.2.3.min.js"></script>
-<script src="js/externalLibrary/bootstrap.js"></script>
+<script src="js/controllersNavigation.js"></script>
+<script src="js/servicesFactory.js"></script>
 </body>
 </html>
