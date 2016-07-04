@@ -7,19 +7,24 @@
     variables.MyControllers = angular.module('controllersUser', ['ngRoute']);
 
     // ********************* PRODUCTS *******************************//
-    variables.MyControllers.controller('productsListUser', ['$scope', '$filter', '$http' , 'store', 'cart' , function ($scope, $filter, $http, store, cart) {
+    variables.MyControllers.controller('productsListUser', ['$scope', '$filter', '$http' , 'store', 'cartServ' , function ($scope, $filter, $http, store, cartServ) {
 
-        var myObj = {
-            name: 'mgonto'
-        };
+        // var myObj = {
+        //     name: 'mgonto'
+        // };
 
-        store.set('obj', myObj);
-
-        cart.show();
+      //  store.set('obj', myObj);
 
 
+    
+        $scope.addProductToCart = function ( product ) {
+            cartServ.add( product );
 
+        }
 
+        $scope.show = function () {
+            cartServ.show();
+        }
 
         $http.get("model/products.json").success(function (data) {
             $scope.products = data;
