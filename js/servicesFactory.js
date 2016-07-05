@@ -16,7 +16,7 @@
 
 
         cart.show = function () {
-            console.log(store.get('cart'));
+            return store.get('cart');
         };
 
         cart.add = function (product) {
@@ -46,14 +46,21 @@
 
         cart.empty = function () {
             store.remove('cart');
-        }
+            cart.length = 0;
+        };
 
+        cart.countTotalPrice = function () {
+            var total=0;
+            angular.forEach(cart, function (value, key) {
+                total=total+(value.price * value.quantity);
+            })
+            return total;
+        };
 
         return cart;
 
     }]);
 }());
-
 
 
 

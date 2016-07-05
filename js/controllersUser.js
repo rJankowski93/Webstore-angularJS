@@ -9,21 +9,8 @@
     // ********************* PRODUCTS *******************************//
     variables.MyControllers.controller('productsListUser', ['$scope', '$filter', '$http' , 'store', 'cartServ' , function ($scope, $filter, $http, store, cartServ) {
 
-        // var myObj = {
-        //     name: 'mgonto'
-        // };
-
-      //  store.set('obj', myObj);
-
-
-    
         $scope.addProductToCart = function ( product ) {
             cartServ.add( product );
-
-        }
-
-        $scope.show = function () {
-            cartServ.show();
         }
 
         $http.get("model/products.json").success(function (data) {
@@ -54,5 +41,20 @@
         })
     }]);
 
+    // ********************* CART *******************************//
+
+    variables.MyControllers.controller('cartCtrl', ['$scope', '$http','cartServ',  function ($scope, $http, cartServ) {
+        $scope.cart =  function () {
+            return cartServ.show();
+        }
+
+        $scope.total = function () {
+            return cartServ.countTotalPrice();
+        }
+
+        $scope.empty = function () {
+            cartServ.empty();
+        }
+    }]);
 
 }());

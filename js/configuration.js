@@ -79,7 +79,14 @@
 			controller: "orderDetailsUser",
 			templateUrl: "partials/user/orderDetails.html"
 		})
-		
+
+		// ********************* CART *******************************//
+
+		$routeProvider.when("/cart", {
+			controller: "cartCtrl",
+			templateUrl: "partials/user/cart.html"
+		})
+
 		// ****************************************************//
 		
 		$routeProvider.otherwise({
