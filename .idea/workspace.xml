@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6ccff0d4-8659-46a2-b79b-53b338d1b2c8" name="Default" comment="show cart&#10;empty cart&#10;&#10;">
+    <list default="true" id="6ccff0d4-8659-46a2-b79b-53b338d1b2c8" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/user/login.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/partials/user/registration.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllersNavigation.js" afterPath="$PROJECT_DIR$/js/controllersNavigation.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/configuration.js" afterPath="$PROJECT_DIR$/js/configuration.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/controllersUser.js" afterPath="$PROJECT_DIR$/js/controllersUser.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/servicesFactory.js" afterPath="$PROJECT_DIR$/js/servicesFactory.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/user/cart.html" afterPath="$PROJECT_DIR$/partials/user/cart.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/admin/navigation.html" afterPath="$PROJECT_DIR$/partials/admin/navigation.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/partials/user/navigation.html" afterPath="$PROJECT_DIR$/partials/user/navigation.html" />
     </list>
     <ignored path="ngShop.iws" />
@@ -30,21 +32,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="servicesFactory.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/servicesFactory.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="697">
-              <caret line="53" column="11" selection-start-line="53" selection-start-column="11" selection-end-line="55" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="cart.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/partials/user/cart.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="20" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="20" />
+              <caret line="0" column="70" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="70" />
               <folding>
                 <element signature="n#style#0;n#input#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
               </folding>
@@ -52,11 +44,41 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="controllersUser.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="registration.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/user/registration.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="35" column="96" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/partials/user/login.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="controllersUser.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/controllersUser.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+            <state relative-caret-position="718">
+              <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
               <folding />
             </state>
           </provider>
@@ -101,7 +123,6 @@
         <option value="$PROJECT_DIR$/partials/user/productDetails.html" />
         <option value="$PROJECT_DIR$/partials/user/ordersList.html" />
         <option value="$PROJECT_DIR$/partials/user/orderDetails.html" />
-        <option value="$PROJECT_DIR$/partials/admin/navigation.html" />
         <option value="$PROJECT_DIR$/partials/admin/userEdit.html" />
         <option value="$PROJECT_DIR$/partials/admin/userCreate.html" />
         <option value="$PROJECT_DIR$/partials/admin/productEdit.html" />
@@ -109,14 +130,17 @@
         <option value="$PROJECT_DIR$/partials/admin/orderEdit.html" />
         <option value="$PROJECT_DIR$/js/externalLibrary/angular-local-storage.min.js" />
         <option value="$PROJECT_DIR$/js/controllersNavigation.html" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/partials/user/productsList.html" />
-        <option value="$PROJECT_DIR$/js/configuration.js" />
         <option value="$PROJECT_DIR$/js/controllersNavigation.js" />
-        <option value="$PROJECT_DIR$/partials/user/navigation.html" />
         <option value="$PROJECT_DIR$/js/servicesFactory.js" />
         <option value="$PROJECT_DIR$/partials/user/cart.html" />
+        <option value="$PROJECT_DIR$/partials/user/navigation.html" />
+        <option value="$PROJECT_DIR$/js/configuration.js" />
+        <option value="$PROJECT_DIR$/partials/admin/navigation.html" />
+        <option value="$PROJECT_DIR$/partials/user/registration.html" />
         <option value="$PROJECT_DIR$/js/controllersUser.js" />
+        <option value="$PROJECT_DIR$/partials/user/login.html" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -218,20 +242,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ngShop" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="model" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -729,7 +739,7 @@
       <workItem from="1467327078199" duration="358000" />
       <workItem from="1467374642211" duration="10263000" />
       <workItem from="1467563601770" duration="17847000" />
-      <workItem from="1467974104499" duration="6677000" />
+      <workItem from="1467974104499" duration="9896000" />
     </task>
     <task id="LOCAL-00001" summary="add navigation admin and user">
       <created>1467376747085</created>
@@ -773,11 +783,18 @@
       <option name="project" value="LOCAL" />
       <updated>1467751465114</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add paypal&#10;">
+      <created>1467990180555</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1467990180555</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38803000" />
+    <option name="totallyTimeSpent" value="42022000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -838,7 +855,8 @@
     <MESSAGE value="add local storage &#10;" />
     <MESSAGE value="add products to cart&#10;" />
     <MESSAGE value="show cart&#10;empty cart&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="show cart&#10;empty cart&#10;&#10;" />
+    <MESSAGE value="add paypal&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="add paypal&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -851,21 +869,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/partials/admin/orderCreate.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="22" selection-start-line="0" selection-start-column="22" selection-end-line="0" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/configuration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="48" selection-start-line="13" selection-start-column="48" selection-end-line="13" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/admin/navigation.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
@@ -1104,14 +1107,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="34" selection-start-line="27" selection-start-column="34" selection-end-line="27" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/partials/user/productsList.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
@@ -1149,30 +1144,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/configuration.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="616">
-          <caret line="86" column="50" selection-start-line="86" selection-start-column="50" selection-end-line="86" selection-end-column="50" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/user/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/partials/admin/navigation.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="48" selection-start-line="14" selection-start-column="48" selection-end-line="14" selection-end-column="48" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllersAdmin.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
@@ -1197,20 +1168,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/configuration.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="463">
+          <caret line="90" column="0" selection-start-line="90" selection-start-column="0" selection-end-line="90" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/admin/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="110" selection-start-line="25" selection-start-column="110" selection-end-line="25" selection-end-column="110" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/user/navigation.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="72" selection-start-line="14" selection-start-column="72" selection-end-line="14" selection-end-column="72" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/partials/user/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="20" selection-start-line="0" selection-start-column="10" selection-end-line="0" selection-end-column="20" />
+          <caret line="0" column="70" selection-start-line="0" selection-start-column="64" selection-end-line="0" selection-end-column="70" />
           <folding>
             <element signature="n#style#0;n#input#0;n#div#0;n#td#3;n#tr#0;n#tbody#0;n#table#0;n#div#2;n#div#0;n#div#0;n#form#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/partials/user/registration.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" column="96" selection-start-line="35" selection-start-column="96" selection-end-line="35" selection-end-column="96" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/partials/user/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="36" selection-start-line="23" selection-start-column="36" selection-end-line="23" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/controllersUser.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="47" column="35" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
+        <state relative-caret-position="718">
+          <caret line="93" column="40" selection-start-line="93" selection-start-column="40" selection-end-line="93" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="7" selection-start-line="28" selection-start-column="7" selection-end-line="28" selection-end-column="7" />
           <folding />
         </state>
       </provider>

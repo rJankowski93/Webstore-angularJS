@@ -87,6 +87,18 @@
 			templateUrl: "partials/user/cart.html"
 		})
 
+		// ********************* LOGIN *******************************//
+
+		$routeProvider.when("/login", {
+			controller: "login",
+			templateUrl: "partials/user/login.html"
+		})
+
+		$routeProvider.when("/registration", {
+			controller: "registration",
+			templateUrl: "partials/user/registration.html"
+		})
+
 		// ****************************************************//
 		
 		$routeProvider.otherwise({

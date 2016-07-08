@@ -75,4 +75,24 @@
         }
     }]);
 
+    // ********************* LOGIN *******************************//
+
+    variables.MyControllers.controller('login', ['$scope', '$http', function ($scope, $http) {
+        $scope.login = function () {
+            $scope.errors = {};
+            $scope.errors.login = 'Wrong email or password';
+            console.log( $scope.input );
+        }
+    }]);
+
+    variables.MyControllers.controller('registration', ['$scope', '$http', function ($scope, $http) {
+        $scope.register = function () {
+            $scope.errors = {};
+            $scope.errors.name = 'Wrong name';
+            $scope.errors.email = 'Wrong email ';
+            $scope.errors.password = 'Wrong password';
+            console.log( $scope.input );
+        }
+    }]);
+
 }());
