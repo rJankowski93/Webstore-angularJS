@@ -4,7 +4,7 @@
         MyControllers: {}
     };
 
-    variables.MyControllers = angular.module('controllersAdmin', ['ngRoute']);
+    variables.MyControllers = angular.module('controllersAdmin', []);
 
     // ********************* PRODUCTS *******************************//
 
@@ -23,7 +23,7 @@
 
     }]);
 
-    variables.MyControllers.controller('productEditAdmin', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
+    variables.MyControllers.controller('productEditAdmin', ['$scope', '$http', '$routeParams', 'FileUploader', function ($scope, $http, $routeParams, FileUploader) {
         $http.get("model/products.json").success(function (data) {
             var products = data;
             $scope.product = products[$routeParams.id];
@@ -34,6 +34,23 @@
         $scope.saveChanges = function (product) {
             // TODO tutaj bedziemy zapisywac zmeiny do bazy
         }
+
+        var uploader = $scope.uploader = new FileUploader({
+            url: '' // ścieżka do api obsługującego upload
+        });
+
+        uploader.filters.push({
+            name: 'imageFilter',
+            fn: function (item /*{File|FileLikeObject}*/, options) {
+                var type = '|' + item.type.slice(item.type.lastIndexOf('/') + 1) + '|';
+                return '|jpg|png|jpeg|bmp|gif|'.indexOf(type) !== -1;
+            }
+        });
+
+        uploader.onCompleteItem = function (fileItem, response, status, headers) {
+            console.info('onCompleteItem', fileItem, response, status, headers);
+        };
+
     }]);
 
     variables.MyControllers.controller('productCreateAdmin', ['$scope', '$http', function ($scope, $http) {
@@ -47,7 +64,7 @@
 
     variables.MyControllers.controller('navigation', ['$scope', '$location', function ($scope, $location) {
         $scope.navigation = function () {
-            if ( /^\/admin/.test( $location.path() ) )
+            if (/^\/admin/.test($location.path()))
                 return 'partials/admin/navigation.html';
             else
                 return 'partials/user/navigation.html';
