@@ -8,7 +8,7 @@
     variables.servicesFactory = angular.module('servicesFactory', []);
 
 
-    variables.servicesFactory.factory('cartServ', ['store', function (store) {
+    variables.servicesFactory.factory('cartServ', ['store','$filter', function (store, $filter) {
         if (store.get('cart'))
             var cart = store.get('cart');
         else
@@ -50,12 +50,18 @@
         };
 
         cart.countTotalPrice = function () {
-            var total=0;
+            var total = 0;
             angular.forEach(cart, function (value, key) {
-                total=total+(value.price * value.quantity);
+                total = total + (value.price * value.quantity);
             })
+            total= $filter( 'number' )( total , 2 );
             return total;
         };
+
+        cart.removeItem = function (index) {
+            cart.splice(index, 1);
+            store.set("cart", cart);
+        }
 
         return cart;
 
