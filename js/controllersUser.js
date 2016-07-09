@@ -20,7 +20,7 @@
         })
     }]);
 
-    variables.MyControllers.controller('productDetailsUser', ['$scope', '$http', '$routeParams', 'store', function ($scope, $http, $routeParams, store) {
+    variables.MyControllers.controller('productDetailsUser', ['$scope', '$http', '$routeParams', function ($scope, $http, $routeParams) {
         $http.get("model/products.json").success(function (data) {
             var products = data;
             $scope.product = products[$routeParams.id];
@@ -77,7 +77,7 @@
 
     // ********************* LOGIN *******************************//
 
-    variables.MyControllers.controller('login', ['$scope', '$http', function ($scope, $http) {
+    variables.MyControllers.controller('login', ['$scope', function ($scope) {
         $scope.login = function () {
             $scope.errors = {};
             $scope.errors.login = 'Wrong email or password';
@@ -85,7 +85,7 @@
         }
     }]);
 
-    variables.MyControllers.controller('registration', ['$scope', '$http', function ($scope, $http) {
+    variables.MyControllers.controller('registration', ['$scope', function ($scope) {
         $scope.register = function () {
             $scope.errors = {};
             $scope.errors.name = 'Wrong name';

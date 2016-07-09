@@ -61,7 +61,7 @@
         };
         getImages()
 
-        $scope.removeImage = function (imageName , $index, productId) {
+        $scope.removeImage = function (imageName , $index) {
             $scope.images.splice( $index , 1 );
             $http.post( 'api/admin/images/delete/' , {
                 id : $scope.product.id,
@@ -75,7 +75,7 @@
 
     }]);
 
-    variables.MyControllers.controller('productCreateAdmin', ['$scope', '$http', function ($scope, $http) {
+    variables.MyControllers.controller('productCreateAdmin', ['$scope', function ($scope) {
         $scope.product;
         $scope.createProduct = function (product) {
             // TODO tutaj bedziemy zapisywac zmeiny do bazy
