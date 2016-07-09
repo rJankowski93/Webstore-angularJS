@@ -36,7 +36,7 @@
         }
 
         var uploader = $scope.uploader = new FileUploader({
-            url: '' // ścieżka do api obsługującego upload
+             url: 'api/admin/images/upload/' + $routeParams.id
         });
 
         uploader.filters.push({
@@ -48,7 +48,7 @@
         });
 
         uploader.onCompleteItem = function (fileItem, response, status, headers) {
-            console.info('onCompleteItem', fileItem, response, status, headers);
+            //console.info('onCompleteItem', fileItem, response, status, headers);
         };
 
     }]);
