@@ -7,6 +7,13 @@
 				<h3>
 					<span class="label label-warning"> {{product.price | number:2}} zl</span>
 				</h3>
+
+				<div  ng-repeat="image in images">
+					<div id="imageProductEdit" class="pull-left">
+						<img class="img-thumbnail" src="uploads/{{product.id}}/{{image}}">
+						<button class="btn btn-danger btn-xs" ng-click="removeImage(image , $index)"> <strong>&times;</strong></button>
+					</div>
+				</div>
 			</div>
 			<div class="col-sm-6">
 				<div class="form-group">

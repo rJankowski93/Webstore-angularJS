@@ -9,7 +9,6 @@
     // ********************* PRODUCTS *******************************//
 
     variables.MyControllers.controller('productsListAdmin', ['$scope', '$filter', '$http', function ($scope, $filter, $http) {
-
         $http.get("model/products.json").success(function (data) {
             $scope.products = data;
         }).error(function () {
@@ -24,9 +23,11 @@
     }]);
 
     variables.MyControllers.controller('productEditAdmin', ['$scope', '$http', '$routeParams', 'FileUploader', function ($scope, $http, $routeParams, FileUploader) {
+
+
         $http.get("model/products.json").success(function (data) {
             var products = data;
-            $scope.product = products[$routeParams.id];
+            $scope.product = products[$routeParams.id-1];
         }).error(function () {
             console.log("Error json file");
         })
@@ -48,8 +49,29 @@
         });
 
         uploader.onCompleteItem = function (fileItem, response, status, headers) {
-            //console.info('onCompleteItem', fileItem, response, status, headers);
+            getImages();
         };
+
+      function getImages() {
+            $http.get("api/admin/images/get/"+$routeParams.id).success(function (data) {
+                $scope.images = data;
+            }).error(function () {
+                console.log("Error json file");
+            })
+        };
+        getImages()
+
+        $scope.removeImage = function (imageName , $index, productId) {
+            $scope.images.splice( $index , 1 );
+            $http.post( 'api/admin/images/delete/' , {
+                id : $scope.product.id,
+                image : imageName
+            }).success( function(  ){
+
+            }).error( function(){
+                console.log( 'Błąd pobrania pliku json' );
+            });
+        }
 
     }]);
 
